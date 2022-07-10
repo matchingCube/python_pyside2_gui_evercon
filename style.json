@@ -1,0 +1,232 @@
+{
+  "QMainWindow": [
+    {
+      "frameless": true,
+      "transluscentBg": true,
+      "navigation": [
+        {
+          "moveWindow": "header_container",
+          "tittleBar": "header_container"
+        }
+      ]
+    }
+  ],
+  "QCustomSlideMenu": [
+    {
+      "name": "sidebar_widget",
+      "defaultSize": [
+        {
+          "width": 160,
+          "height": "parent"
+        }
+      ],
+      "collapsedSize": [
+        {
+          "width": 50,
+          "height": "parent"
+        }
+      ],
+      "expandedSize": [
+        {
+          "width": 160,
+          "height": "parent"
+        }
+      ],
+      "toggleButton": [
+        {
+          "buttonName": "menuBtn",
+          "icons": [
+            {
+              "whenMenuIsCollapsed": ":/icons/icons/align-justify.svg",
+              "whenMenuIsExpanded": ":/icons/icons/chevron-left.svg"
+            }
+          ]
+        }
+      ],
+      "menuTransitionAnimation": [
+        {
+          "animationDuration": 200,
+          "animationEasingCurve": "Linear"
+        }
+      ]
+    },
+    {
+      "name": "center_menu",
+      "defaultSize": [
+        {
+          "width": 0,
+          "height": "parent"
+        }
+      ],
+      "collapsedSize": [
+        {
+          "width": 0,
+          "height": "parent"
+        }
+      ],
+      "expandedSize": [
+        {
+          "width": 200,
+          "height": "parent"
+        }
+      ],
+      "menuTransitionAnimation": [
+        {
+          "animationDuration": 300,
+          "animationEasingCurve": "Linear"
+        }
+      ]
+    },
+    {
+      "name": "right_menu_container",
+      "defaultSize": [
+        {
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "collapsedSize": [
+        {
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "expandedSize": [
+        {
+          "width": 202,
+          "height": "parent"
+        }
+      ],
+      "menuTransitionAnimation": [
+        {
+          "animationDuration": 300,
+          "animationEasingCurve": "Linear"
+        }
+      ]
+    },
+    {
+      "name": "popup_notification_container",
+      "defaultSize": [
+        {
+          "width": 0,
+          "height": "auto"
+        }
+      ],
+      "collapsedSize": [
+        {
+          "width": 0,
+          "height": "auto"
+        }
+      ],
+      "expandedSize": [
+        {
+          "width": 700,
+          "height": 120
+        }
+      ],
+      "menuTransitionAnimation": [
+        {
+          "animationDuration": 250,
+          "animationEasingCurve": "Linear"
+        }
+      ],
+      "floatPosition": [
+        {
+          "relativeTo": "body_container",
+          "position": "top-center",
+          "shadow": [
+            {
+              "color": "#aaa",
+              "blurRadius": 20,
+              "xOffset": 0,
+              "yOffset": 0
+            }
+          ]
+        }
+      ],
+      "toggleButton": [
+        {
+          "buttonName": "btnNotification"
+        }
+      ]
+    }
+  ],
+  "QStackedWidget": [
+    {
+      "name": "centralStackedWidget",
+      "navigation": [
+        {
+          "navigationButtons": [
+            {
+              "firstStartBtn": "mainScreen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mainPage",
+      "navigation": [
+        {
+          "navigationButtons": [
+            {
+              "btnHome": "mainHomePage",
+              "btnDataAnalysis": "mainDataPage",
+              "btnReports": "mainReportPage",
+              "btnZones": "mainZonePage",
+              "btnFieldStations": "mainFieldPage",
+              "btnSchedule": "mainSchedulePage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "centerMenuPage",
+      "navigation": [
+        {
+          "navigationButtons": [
+            {
+              "btnSettings": "centerMenuSettingsPage",
+              "btnInfo": "centerMenuInfoPage",
+              "btnHelp": "centerMenuHelpPage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rightMenuPage",
+      "navigation": [
+        {
+          "navigationButtons": [
+            {
+              "btnMore": "rightMenuMorePage",
+              "btnProfile": "rightMenuProfilePage"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "QPushButtonGroup": [
+    {
+      "Buttons": ["btnHome", "btnDataAnalysis", "btnReports"],
+      "Style": [
+        {
+          "Active": "background-color: #253478;",
+          "NotActive": ""
+        }
+      ]
+    },
+    {
+      "Buttons": ["btnSettings", "btnInfo", "btnHelp"],
+      "Style": [
+        {
+          "Active": "background-color: #233972;",
+          "NotActive": ""
+        }
+      ]
+    }
+  ]
+}
